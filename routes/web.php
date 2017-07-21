@@ -11,8 +11,14 @@
 |
 */
 
-Route::get('/post', 'PostController@index');
+Route::name('posts_path')->get('/posts', 'PostController@index');
 
-Route::get('/post/{id}', 'PostController@show');
+Route::name('create_post_path')->get('/posts/crear','PostController@crear');
+Route::name('store_post_path')->post('/post', 'PostController@store');
+
+Route::name('post_path')->get('/posts/{post}', 'PostController@show');
+
+
+
 
 
