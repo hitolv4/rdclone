@@ -18,7 +18,14 @@
 		<div class="row">
 
 			<div class="col-md-12">
-				<h2><a href="{{route('posts_path')}}">Rd-Clon</a></h2>
+				<h1>
+					<a href="{{route('posts_path')}}">Rd-Clon</a>
+
+					<small class="pull-right">
+						<a href="{{route('create_post_path')}}">Crear Post</a>
+					</small>
+				</h1>
+
 				
 			</div>
 
@@ -26,6 +33,8 @@
 
 		<hr>
 
+		@include('layouts._errors')
+		@include('layouts._messages')
 		@yield('content')
 
 		<hr>
