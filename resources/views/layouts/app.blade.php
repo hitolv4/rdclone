@@ -18,8 +18,8 @@
 		<div class="row">
 
 			<div class="col-md-12">
-
-				<h1>Rd-Clon</h1>
+				<h2><a href="{{route('posts_path')}}">Rd-Clon</a></h2>
+				
 			</div>
 
 		</div>
